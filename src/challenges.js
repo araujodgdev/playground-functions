@@ -20,17 +20,26 @@ function splitSentence(sentence) {
 
 // Desafio 4
 function concatName(name) {
-  return  name[name.length - 1] + ', ' + name[0];
+  return name[name.length - 1] + ', ' + name[0];
 }
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  return  wins * 3 + ties;
+  return wins * 3 + ties;
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(numbers) {
+  let biggestNumber = numbers.reduce(function (a, b) {
+    return Math.max(a, b);
+  }, -Infinity);
+  let counter = 0;
+  for (let number of numbers) {
+    if (biggestNumber === number) {
+      counter += 1;
+    }
+  }
+  return counter;
 }
 
 // Desafio 7
