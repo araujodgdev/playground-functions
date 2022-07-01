@@ -79,7 +79,7 @@ function fizzBuzz(numbers) {
 
 // Desafio 9
 function encode() {
-  // seu código aqui
+    let encoded = [];
 }
 function decode() {
   // seu código aqui
